@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Just Music — Visual Proof</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main id="app" class="scene" data-beat="0">
+    <div class="film-grain" aria-hidden="true"></div>
+    <div class="rain rain-a" aria-hidden="true"></div>
+    <div class="rain rain-b" aria-hidden="true"></div>
+
+    <section class="world" aria-label="Rehearsal studio at night">
+      <svg class="set set-back" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="wall" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#16171a"/>
+            <stop offset=".55" stop-color="#202126"/>
+            <stop offset="1" stop-color="#0d0e11"/>
+          </linearGradient>
+          <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#202124"/>
+            <stop offset="1" stop-color="#090a0d"/>
+          </linearGradient>
+          <linearGradient id="windowGlow" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#48636d"/>
+            <stop offset=".48" stop-color="#16232a"/>
+            <stop offset="1" stop-color="#090f14"/>
+          </linearGradient>
+          <radialGradient id="lamp" cx=".5" cy=".5" r=".5">
+            <stop offset="0" stop-color="#ffd5a0" stop-opacity=".8"/>
+            <stop offset="1" stop-color="#ffd5a0" stop-opacity="0"/>
+          </radialGradient>
+          <filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+          <filter id="shadow"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#000" flood-opacity=".55"/></filter>
+        </defs>
+
+        <rect width="1600" height="900" fill="#08090b"/>
+        <rect x="0" y="0" width="1600" height="620" fill="url(#wall)"/>
+        <path d="M0 620 L1600 620 L1600 900 L0 900 Z" fill="url(#floor)"/>
+
+        <path d="M0 620 L1600 620" stroke="#38393d" stroke-width="3"/>
+        <path d="M205 620 L390 900 M520 620 L625 900 M835 620 L868 900 M1165 620 L1095 900 M1440 620 L1300 900"
+              stroke="#17181b" stroke-width="4" opacity=".7"/>
+
+        <g opacity=".96">
+          <rect x="103" y="90" width="525" height="350" rx="4" fill="#0a0d11" stroke="#35393f" stroke-width="8"/>
+          <rect x="121" y="108" width="238" height="314" fill="url(#windowGlow)"/>
+          <rect x="372" y="108" width="238" height="314" fill="url(#windowGlow)"/>
+          <path d="M121 228 H359 M372 228 H610" stroke="#2d353a" stroke-width="5"/>
+          <path d="M250 108 V422 M498 108 V422" stroke="#2d353a" stroke-width="5"/>
+          <g stroke="#9bb8c6" stroke-width="2" opacity=".25">
+            <path d="M135 120 l-70 240 M175 110 l-70 260 M235 112 l-68 250 M305 112 l-72 265 M390 110 l-72 260 M455 110 l-70 250 M535 108 l-70 270 M595 110 l-66 242"/>
+          </g>
+        </g>
+
+        <rect x="740" y="84" width="635" height="25" rx="12" fill="#efe7dd" opacity=".88"/>
+        <rect x="740" y="84" width="635" height="25" rx="12" fill="#f5d5a9" opacity=".3" filter="url(#blur20)"/>
+
+        <g filter="url(#shadow)">
+          <rect x="1125" y="390" width="270" height="210" rx="10" fill="#111217" stroke="#393b42" stroke-width="4"/>
+          <rect x="1144" y="408" width="232" height="65" rx="5" fill="#191b21"/>
+          <circle cx="1185" cy="440" r="6" fill="#bd8e52"/>
+          <circle cx="1210" cy="440" r="6" fill="#d7d2c9"/>
+          <rect x="1144" y="488" width="232" height="93" rx="4" fill="#0a0b0f"/>
+          <circle cx="1208" cy="534" r="35" fill="#17191d" stroke="#2b2d33" stroke-width="4"/>
+          <circle cx="1315" cy="534" r="35" fill="#17191d" stroke="#2b2d33" stroke-width="4"/>
+        </g>
+
+        <g opacity=".92">
+          <rect x="85" y="531" width="300" height="85" rx="10" fill="#17191f" stroke="#34363b" stroke-width="4"/>
+          <rect x="103" y="551" width="264" height="46" rx="5" fill="#0c0e12"/>
+          <circle cx="135" cy="574" r="9" fill="#b48a4e"/>
+          <circle cx="165" cy="574" r="9" fill="#d2c8b7"/>
+        </g>
+
+        <g opacity=".65">
+          <path d="M656 460 C640 535 645 607 670 650" stroke="#cfcfc7" stroke-width="5" fill="none"/>
+          <rect x="638" y="427" width="36" height="54" rx="17" fill="#7b7d81"/>
+          <path d="M656 478 L656 640 M606 640 H705" stroke="#6a6c72" stroke-width="8" stroke-linecap="round"/>
+        </g>
+
+        <g transform="translate(770 470)" opacity=".78">
+          <ellipse cx="0" cy="170" rx="155" ry="28" fill="#030406" opacity=".7"/>
+          <circle cx="0" cy="90" r="78" fill="#14161a" stroke="#55575c" stroke-width="5"/>
+          <circle cx="-92" cy="104" r="49" fill="#14161a" stroke="#4d5055" stroke-width="5"/>
+          <circle cx="95" cy="105" r="49" fill="#14161a" stroke="#4d5055" stroke-width="5"/>
+          <path d="M0 30 V-50 M-10 -50 H115 M48 -50 V-118" stroke="#72747a" stroke-width="7" fill="none" stroke-linecap="round"/>
+          <ellipse cx="48" cy="-124" rx="71" ry="10" fill="#777980"/>
+          <path d="M-92 55 V-10 M95 55 V-15" stroke="#72747a" stroke-width="6"/>
+          <ellipse cx="-92" cy="-14" rx="55" ry="8" fill="#6c6e75"/>
+          <ellipse cx="95" cy="-18" rx="52" ry="8" fill="#6c6e75"/>
+        </g>
+
+        <g opacity=".44">
+          <rect x="1460" y="160" width="70" height="370" rx="4" fill="#0b0d10" stroke="#30333a" stroke-width="4"/>
+          <path d="M1495 184 V508" stroke="#40434a" stroke-width="4"/>
+          <path d="M1476 244 H1514 M1476 324 H1514 M1476 404 H1514" stroke="#464950" stroke-width="4"/>
+        </g>
+
+        <circle cx="980" cy="345" r="270" fill="url(#lamp)" opacity=".16"/>
+        <circle cx="1220" cy="610" r="240" fill="#d56b42" opacity=".04" filter="url(#blur20)"/>
+
+        <g opacity=".42">
+          <path d="M96 764 C315 690 466 858 690 788 S1044 720 1245 818" stroke="#14161a" stroke-width="8" fill="none"/>
+          <path d="M500 730 C600 782 610 833 785 852" stroke="#34363c" stroke-width="5" fill="none"/>
+        </g>
+
+        <g transform="translate(1330 180) rotate(-3)">
+          <rect width="145" height="190" fill="#dcd7cd" opacity=".8"/>
+          <rect x="11" y="12" width="123" height="115" fill="#26282f"/>
+          <circle cx="72" cy="64" r="36" fill="#c16e50" opacity=".65"/>
+          <path d="M30 149 H114 M30 161 H95 M30 173 H104" stroke="#3b3b3b" stroke-width="5" opacity=".65"/>
+        </g>
+      </svg>
+
+      <div class="set-light cyan" aria-hidden="true"></div>
+      <div class="set-light amber" aria-hidden="true"></div>
+
+      <article class="character character-milo" data-character="milo" aria-label="Milo">
+        <svg viewBox="0 0 480 760" aria-hidden="true">
+          <defs>
+            <linearGradient id="miloShirt" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#212329"/>
+              <stop offset="1" stop-color="#090a0c"/>
+            </linearGradient>
+            <linearGradient id="miloSkin" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#d9a27e"/>
+              <stop offset="1" stop-color="#9d694f"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="236" cy="706" rx="168" ry="30" fill="#000" opacity=".35"/>
+          <path d="M156 322 C127 352 108 422 98 525 L70 662 H167 L205 489 L263 496 L309 664 H409 L376 505 C360 424 344 365 314 327 Z"
+                fill="url(#miloShirt)"/>
+          <path d="M188 313 C206 332 270 332 294 308 L286 382 C253 403 210 394 184 376 Z" fill="url(#miloSkin)"/>
+          <path d="M172 118 C202 69 286 67 318 116 C340 150 329 243 309 288 C290 330 209 337 181 291 C154 246 149 158 172 118 Z" fill="url(#miloSkin)"/>
+          <path d="M163 132 C168 61 243 42 304 69 C345 87 348 132 334 163 C312 145 293 133 261 130 C224 127 201 145 169 159 Z"
+                fill="#111217"/>
+          <path d="M165 152 C138 174 145 220 166 225 M331 157 C352 173 347 216 330 225" fill="none" stroke="#a86e53" stroke-width="12" stroke-linecap="round"/>
+          <path d="M200 216 Q218 225 236 215 M270 214 Q288 223 306 212" stroke="#3b2b27" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <circle cx="221" cy="214" r="5" fill="#171516"/><circle cx="287" cy="211" r="5" fill="#171516"/>
+          <path class="milo-mouth neutral" d="M232 269 Q256 277 282 266" stroke="#7f4d45" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path class="milo-mouth smile" d="M229 266 Q256 292 286 264" stroke="#7f4d45" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path class="milo-mouth hurt" d="M235 278 Q256 268 279 278" stroke="#7f4d45" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M118 423 C82 483 72 544 60 600" stroke="#b77e61" stroke-width="32" stroke-linecap="round"/>
+          <path d="M353 416 C389 474 400 529 421 574" stroke="#b77e61" stroke-width="32" stroke-linecap="round"/>
+          <path d="M60 598 Q78 619 94 597" stroke="#a76f57" stroke-width="24" stroke-linecap="round"/>
+          <path d="M420 573 Q436 594 446 568" stroke="#a76f57" stroke-width="24" stroke-linecap="round"/>
+          <path d="M187 354 H294" stroke="#43454d" stroke-width="3" opacity=".7"/>
+          <circle cx="240" cy="369" r="5" fill="#bba06b"/>
+        </svg>
+        <span class="character-name">MILO</span>
+      </article>
+
+      <article class="character character-eli" data-character="eli" aria-label="Eli">
+        <svg viewBox="0 0 560 820" aria-hidden="true">
+          <defs>
+            <linearGradient id="eliJacket" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#5c3a2f"/>
+              <stop offset=".55" stop-color="#251f1f"/>
+              <stop offset="1" stop-color="#111216"/>
+            </linearGradient>
+            <linearGradient id="eliSkin" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ead0b8"/>
+              <stop offset="1" stop-color="#b98e73"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="278" cy="775" rx="190" ry="28" fill="#000" opacity=".45"/>
+          <path d="M148 375 C98 430 91 561 82 746 H455 C445 563 437 443 388 378 C334 336 206 335 148 375 Z" fill="url(#eliJacket)"/>
+          <path d="M214 341 C235 362 304 364 329 338 L322 409 C286 434 243 428 207 402 Z" fill="url(#eliSkin)"/>
+          <path d="M194 121 C229 63 324 58 367 115 C398 155 386 261 360 314 C331 369 229 371 197 316 C167 265 164 168 194 121 Z" fill="url(#eliSkin)"/>
+          <path d="M180 155 C174 87 242 44 314 57 C374 68 408 124 386 186 C350 169 328 146 288 139 C249 132 216 145 180 178 Z" fill="#232127"/>
+          <path d="M190 151 C180 122 190 84 221 66 C205 107 221 137 236 151" fill="#141418"/>
+          <path d="M207 227 Q229 213 250 225 M300 224 Q323 211 345 225" stroke="#4a3b36" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <circle cx="232" cy="227" r="5" fill="#171516"/><circle cx="322" cy="226" r="5" fill="#171516"/>
+          <path class="eli-mouth neutral" d="M251 291 Q278 298 307 288" stroke="#8d665b" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path class="eli-mouth soft" d="M247 286 Q278 313 311 284" stroke="#8d665b" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path class="eli-mouth tense" d="M252 298 Q279 288 305 298" stroke="#8d665b" stroke-width="5" fill="none" stroke-linecap="round"/>
+          <path d="M156 423 L85 612" stroke="#43302c" stroke-width="52" stroke-linecap="round"/>
+          <path d="M390 426 L476 606" stroke="#332827" stroke-width="52" stroke-linecap="round"/>
+          <path d="M84 610 Q95 647 126 626" stroke="#c9a187" stroke-width="28" stroke-linecap="round"/>
+          <path d="M477 604 Q486 634 514 612" stroke="#c9a187" stroke-width="28" stroke-linecap="round"/>
+          <path d="M151 399 C203 446 334 447 395 397" stroke="#76625e" stroke-width="3" opacity=".55"/>
+          <rect x="242" y="405" width="64" height="9" rx="4" fill="#bb9c74" opacity=".7"/>
+        </svg>
+        <span class="character-name">ELI</span>
+      </article>
+
+      <section class="story-ui" aria-live="polite">
+        <div class="chapter-kicker">OCTOBER 18 · 11:47 PM</div>
+        <div class="dialogue-shell">
+          <div class="speaker" id="speaker">MILO</div>
+          <p id="dialogue">You know the worst part? I think the song is good.</p>
+        </div>
+        <button class="continue" id="continue" type="button" aria-label="Continue scene">
+          <span>continue</span><b>↳</b>
+        </button>
+      </section>
+
+      <button class="notification" id="notification" type="button">
+        <span class="avatar-mini">JM</span>
+        <span class="notification-copy">
+          <b>@afterhours</b>
+          <small>posted a clip from tonight</small>
+        </span>
+        <span class="notification-time">now</span>
+      </button>
+
+      <aside class="track-card">
+        <div class="track-art">
+          <span class="track-art-title">GLASS<br/>HOUSE</span>
+          <span class="track-art-mark">JM–001</span>
+        </div>
+        <div>
+          <small>demo · 03:17</small>
+          <strong>Glass House</strong>
+          <span>Milo / Eli</span>
+        </div>
+        <button id="audioToggle" class="audio-toggle" type="button" aria-label="Toggle demo ambience">▶</button>
+      </aside>
+
+      <section class="phone" id="phone" aria-hidden="true">
+        <div class="phone-top">
+          <button id="closePhone" type="button" aria-label="Close phone">×</button>
+          <span>AFTERHOURS</span>
+          <span>23:49</span>
+        </div>
+        <div class="social-post">
+          <div class="social-meta">
+            <span class="avatar-mini">AH</span>
+            <div><strong>@afterhours</strong><small>back room · 2m</small></div>
+          </div>
+          <div class="social-photo">
+            <div class="stage-beam beam-one"></div>
+            <div class="stage-beam beam-two"></div>
+            <div class="stage-body body-one"></div>
+            <div class="stage-body body-two"></div>
+            <div class="stage-crowd"></div>
+            <span>“glass house” ???</span>
+          </div>
+          <div class="social-stats"><b>12.4K views</b><span>1,804 likes</span><span>428 reposts</span></div>
+          <p><strong>@afterhours</strong> WHO are these two and why was the bridge actually insane</p>
+        </div>
+        <div class="phone-reactions">
+          <span>“milo's voice hello??”</span>
+          <span>“need this on streaming yesterday”</span>
+          <span>“the guy in the brown jacket 👀”</span>
+        </div>
+      </section>
+
+      <div class="corner-mark">JUST<br/>MUSIC</div>
+      <div class="scene-caption">VISUAL PROOF / REHEARSAL ROOM A</div>
+    </section>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
